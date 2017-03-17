@@ -1,4 +1,4 @@
-# Raspberry Pi Omega
+# Raspberry Pi Cluster
 
 _"To infinity and beyond!"_
 
@@ -11,11 +11,11 @@ _"To infinity and beyond!"_
 - [Future](#future)
 
 ## About
-Raspberry Pi Omega is a project to create a simple Raspberry Pi cluster to use as a home micro-server, a development platform, or for any number of other possible applications.
+Raspberry Pi Cluster is a project to create a simple Raspberry Pi cluster to use as a home micro-server, a development platform, or for any number of other possible applications.
 
 _The big boys get big toys. Why can't we have our own?_
 
-This project assumes you have familiarity with Linux, Raspian, Docker, and the other technologies used within.
+This project assumes you have some familiarity with Linux, Raspian, Docker, and the other technologies used within.
 
 ## What is Raspberry Pi Omega?
 
@@ -34,14 +34,16 @@ In set notation, Omega is the greek letter used to represent the Universal Set, 
 ## Repositories
 
 Raspberry Pi Omega consists of several repositories for managing and maintaining your cluster:
-- __[rpiomega-salt](https://github.com/ajthor/rpiomega-salt)__ - Provisioner for the cluster. Also handles starting the Docker swarm.
+- __[rpiomega-bootstrap](https://github.com/ajthor/rpiomega-bootstrap)__ - Handles the setup for nodes in the cluster.
+- __[rpiomega-salt](https://github.com/ajthor/rpiomega-salt)__ - Provisioner for the cluster.
 - __rpiomega-backup__ (coming soon) - Scheduled backups for files in the cluster.
 
 ---
 
 ## Usage
+To set up a Raspberry Pi Omega cluster, make sure you install _Raspbian_ on the sd cards you want to use in your cluster. In the future, the _bootstrap_ and _salt_ scripts may cater to other operating systems; but for now, _Raspbian Jessie Lite_ is the easiest to use with the cluster. You can find a download for Raspbian at [Raspberry Pi's Website](https://www.raspberrypi.org/downloads/).
 
-To set up a Raspberry Pi Omega cluster, make sure you install _Raspbian_ on the sd cards you want to use in your cluster. In the future, the _salt_ scripts may cater to other operating systems; but for now, _Raspbian Jessie Lite_ is the easiest to use with the cluster. You can find a download for Raspbian at [Raspberry Pi's Website](https://www.raspberrypi.org/downloads/).
+Once you have Raspbian flashed to the sd cards, insert the sd cards into the boards and power them up. Using the IP address assigned to the device, copy the ssh key from your local machine to the device and run the bootstrap script. See the [rpiomega-bootstrap](https://github.com/ajthor/rpiomega-bootstrap) repo for more details.
 
 Once you have Raspbian flashed to the sd cards, insert the sd cards into the boards and power them up. Using the IP address assigned to the device, copy the ssh key from your local machine to the device and run the bootstrap script. See the [rpiomega-salt](https://github.com/ajthor/rpiomega-salt) repo for more details.
 
