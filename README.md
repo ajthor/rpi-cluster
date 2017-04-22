@@ -1,10 +1,9 @@
 # Raspberry Pi Cluster
 
-_"To infinity and beyond!"_
-
 ## Table of Contents
 - [About](#about)
 - [Getting Started](#getting-started)
+- [Packages](#packages)
 - [Contribute](#contribute)
 - [Future](#future)
 
@@ -20,11 +19,19 @@ If you are looking for the Salt files used with this cluster, go to [rpi-cluster
 
 To set up a Raspberry Pi Omega cluster, make sure you take a look at the [Getting Started](https://github.com/ajthor/rpi-cluster/wiki/Getting-Started) page in the wiki.
 
+## Packages
+
+The Raspberry Pi Cluster has a few packages which are available.
+
+- [rpi-cluster-salt](https://github.com/ajthor/rpi-cluster-salt)
+- [rpi-cluster-docker](https://github.com/ajthor/rpi-cluster-docker)
+- [rpi-cluster-ros](https://github.com/ajthor/rpi-cluster-ros)
+
 ---
 
 # Contribute
 
-I created this project primarily for use as a testbed for distributed computing applications, robotics, and for use as a home micro-server. If you would like to contribute, the best way to help is by adding to the [rpi-cluster-salt repo](https://github.com/ajthor/rpi-cluster-salt).
+I created this project primarily for use as a testbed for distributed computing applications, robotics, and for use as a home micro-server. If you would like to contribute, the best way to help is by contributing to the [packages](#packages), or by creating your own!
 
 ---
 
